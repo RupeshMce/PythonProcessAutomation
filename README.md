@@ -3,7 +3,7 @@
 
 Hi,
 
-  I deveploed this tools to imitate human interaction with machines. There are many tools in real world to do the same , but it an opensource and it is not OS dependent. It will run in any OS which supports Python.
+  I developed this tools to imitate human interaction with machines. There are many tools in real world to do the same , but it an opensource and it is not OS dependent. It will run in any OS which supports Python.
 
 
   It is a **lightweight** and customizable tool ,so you can use it in any kind of lower-end machines to high-end GPU's. 
