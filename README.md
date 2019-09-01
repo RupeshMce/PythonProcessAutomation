@@ -16,11 +16,12 @@ Hi,
   
   
 ## What It has:
-  It has two files **train.py** and **execute.py** . Here, train is used to read/record the human interaction with machine whereas excute is used to imitate/reproduce the human interaction. The interactions are saved in a file foramt called *pickle*.
+  It has two files **train.py** and **execute.py** . Here, train is used to read/record the human interaction with machine     whereas excute is used to imitate/reproduce the human interaction. The interactions are saved in a file foramt called         *pickle*.
 
 ## Training Part:
   Before running the training part the filename need to be specified in order to save the actions in the same name.
   ```python train.py -n scrapInfo.pickle``` 
+  Once the script start run. Do all the actions need to be done *but the exceptional case is ESC key is not allowed to use*     because only the ESC is pressed the training part will get terminated. In case you need to use ESC as key replace the ESC     with some other key, to avoid this issue .
 
 ## Execution Part:
   You need to specify the which file need to execute.
