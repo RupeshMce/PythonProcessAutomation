@@ -29,6 +29,9 @@ except Exception as e:
 else:
     print("Action Begins")
 
+# print(actions_performed)
+# exit()
+
 
 
 key_flag=[]
@@ -47,7 +50,7 @@ def mouse_move(click):
 def double_click(click):
     pyautogui.click(x=click[1],y=click[2],button=click[3])
     pyautogui.doubleClick(x=click[1],y=click[2],button='left')
-    pyautogui.doubleClick(x=click[1],y=click[2],button='left')
+    # pyautogui.doubleClick(x=click[1],y=click[2],button='left')
 
     
 def key_release(click):
@@ -65,8 +68,8 @@ def hotkey():
             pyautogui.keyDown(i)
         else:
             pyautogui.press(i)
-    for i in key_flag:
-        pyautogui.keyUp(i)
+            # for i in key_flag:
+            #     pyautogui.keyUp(i)
     return
         
 def key_press(key):
@@ -115,8 +118,9 @@ for j,i in actions_performed.items():
     if (i[0]=="mouse_scroll"):
         mouse_scroll(i)
         time.sleep(j)
-    if (i[0]=="mouse_move"):
-        mouse_move(i)       
+    # if (i[0]=="mouse_move"):
+    #     mouse_move(i) 
+    #     time.sleep(j)      
         
     if(i[0]=="double_click"):
         double_click(i)

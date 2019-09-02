@@ -58,7 +58,6 @@ class mouse_click(Thread):
     def run(self):
         def on_click(x, y, button, pressed):
             global events_list,listerner_status,postions
-            print(x, y, button.name,pressed)
             if listerner_status:
                 if pressed :
                     if(postions==[x,y]):
@@ -93,7 +92,7 @@ class mouse_click(Thread):
             else:
                 return listerner_status 
             
-        with mouse.Listener(on_click=on_click,on_scroll=on_scroll,on_move=on_move) as listener:
+        with mouse.Listener(on_click=on_click,on_scroll=on_scroll) as listener:
             listener.join()
             print("Mouse Recording Ends")
 
